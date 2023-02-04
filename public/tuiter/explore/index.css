@@ -1,0 +1,137 @@
+:root {
+    --gray: rgb(110, 118, 125);
+    --blue: rgb(29, 161, 242);
+}
+
+body {
+    color: white;
+    width: 600px;
+    background-color: black;
+    font-family: "Segoe UI", sans-serif;
+    border-right: 1px var(--gray) solid;
+    margin-right: 20px;
+}
+
+h2 {
+    float: left;
+    padding: 8px;
+    width: 20px;
+    margin: 0;
+    border-right: 1px var(--gray) solid;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wd-search-bar {
+    background-color: rgb(33, 35, 39);
+    height: 30px;
+    width: 75%;
+    float: left;
+    border-radius: 20px;
+    border: 0 var(--gray) solid;
+    margin: 8px 0 5px 16px;
+    padding-left: 40px;
+}
+
+.wd-search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.wd-search {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 15px;
+    left: 65px;
+}
+
+.wd-gear {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 14px 12px 0 0;
+}
+
+.wd-headers-row {
+    float: left;
+    border-bottom: 3px var(--gray) solid;
+}
+
+.wd-headers {
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 16px;
+    color: var(--gray);
+}
+
+.wd-selected-header {
+    color: var(--blue);
+    padding: 16px 0 16px 0;
+    margin: 0 16px 0 16px;
+    border-bottom: 4px solid;
+}
+
+.wd-post-row {
+    height: 80px;
+}
+
+.wd-letter {
+    float: left;
+    height: 100%;
+    padding: 10px 8px 0 8px;
+}
+
+.wd-post {
+    width: 564px;
+    height: 100%;
+    margin-left: 36px;
+    margin-right: 0;
+    border-bottom: 1px var(--gray) solid;
+}
+
+.wd-post-text {
+    font-size: 13px;
+    color: var(--gray);
+    padding: 6px 16px 0 16px;
+    margin: 0;
+}
+
+.wd-post-title {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-author {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-post-with-image {
+    float: left;
+    width: 400px;
+}
+
+.wd-post-row-with-image {
+    height: 110px;
+}
+
+.wd-post-image {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+    border-radius: 20px;
+}
+
+.wd-relative {
+    position: relative;
+}
