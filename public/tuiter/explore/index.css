@@ -5,7 +5,7 @@
 
 body {
     color: white;
-    width: 600px;
+    width: 650px;
     background-color: black;
     font-family: "Segoe UI", sans-serif;
     border-right: 1px var(--gray) solid;
@@ -14,14 +14,20 @@ body {
 
 h2 {
     float: left;
-    padding: 8px;
+    padding: 0 8px 0 8px;
     width: 20px;
     margin: 0;
-    border-right: 1px var(--gray) solid;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 a {
     text-decoration: none;
+}
+
+.wd-tools {
+    position: relative;
 }
 
 .wd-search-bar {
@@ -30,7 +36,7 @@ a {
     width: 75%;
     float: left;
     border-radius: 20px;
-    border: 0 var(--gray) solid;
+    border: 0;
     margin: 8px 0 5px 16px;
     padding-left: 40px;
 }
@@ -56,7 +62,9 @@ a {
 }
 
 .wd-headers-row {
-    float: left;
+    display: flex;
+    justify-content: center;
+    border-left: 1px var(--gray) solid;;
     border-bottom: 3px var(--gray) solid;
 }
 
@@ -76,17 +84,16 @@ a {
 }
 
 .wd-post-row {
-    height: 80px;
+    height: 90px;
 }
 
 .wd-letter {
     float: left;
-    height: 100%;
-    padding: 10px 8px 0 8px;
+    border-right: 1px var(--gray) solid;
 }
 
 .wd-post {
-    width: 564px;
+    width: 615px;
     height: 100%;
     margin-left: 36px;
     margin-right: 0;
@@ -117,21 +124,18 @@ a {
 
 .wd-post-with-image {
     float: left;
-    width: 400px;
+    width: 480px;
 }
 
 .wd-post-row-with-image {
-    height: 110px;
+    height: 120px;
 }
 
 .wd-post-image {
     float: right;
     width: 100px;
     height: 100px;
-    margin-right: 16px;
+    margin: 11px 16px;
     border-radius: 20px;
 }
 
-.wd-relative {
-    position: relative;
-}
