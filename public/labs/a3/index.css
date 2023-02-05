@@ -474,12 +474,12 @@ p#id-selector-2 {
 
 @media (min-width: 0px)
 and (max-width: 600px) {
-    div {
+    .mq-div {
         background-color: crimson;
         color: orchid;
     }
 
-    h2 {
+    .mq-h2 {
         background-color: yellow;
     }
 
@@ -491,12 +491,12 @@ and (max-width: 600px) {
 
 @media (min-width: 600px)
 and (max-width: 1200px) {
-    div {
+    .mq-div {
         background-color: pink;
         color: purple;
     }
 
-    h2 {
+    .mq-h2 {
         background-color: blue;
         color: white;
     }
@@ -509,12 +509,12 @@ and (max-width: 1200px) {
 
 @media (min-width: 1200px)
 and (max-width: 1800px) {
-    div {
+    .mq-div {
         background-color: blueviolet;
         color: bisque;
     }
 
-    h2 {
+    .mq-h2 {
         background-color: cyan;
         color: brown;
     }
