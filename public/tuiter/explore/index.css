@@ -1,36 +1,10 @@
-:root {
-    --gray: rgb(110, 118, 125);
-    --blue: rgb(29, 161, 242);
-}
-
-body {
-    color: white;
-    width: 650px;
-    background-color: black;
-    font-family: "Segoe UI", sans-serif;
-    border-right: 1px var(--gray) solid;
-    margin-right: 20px;
-}
-
-h2 {
-    float: left;
-    padding: 0 8px 0 8px;
-    width: 20px;
-    margin: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-a {
-    text-decoration: none;
-}
-
 .wd-tools {
     position: relative;
+    left: 16px;
 }
 
 .wd-search-bar {
+    color: white;
     background-color: rgb(33, 35, 39);
     height: 30px;
     width: 75%;
@@ -43,7 +17,7 @@ a {
 
 .wd-search-bar:focus {
     outline: none;
-    box-shadow: 0 0 10px #719ECE;
+    box-shadow: 0 0 15px #719ECE;
 }
 
 .wd-search {
@@ -51,7 +25,7 @@ a {
     height: 17px;
     position: absolute;
     top: 15px;
-    left: 65px;
+    left: 30px;
 }
 
 .wd-gear {
@@ -64,7 +38,6 @@ a {
 .wd-headers-row {
     display: flex;
     justify-content: center;
-    border-left: 1px var(--gray) solid;;
     border-bottom: 3px var(--gray) solid;
 }
 
@@ -83,27 +56,17 @@ a {
     border-bottom: 4px solid;
 }
 
-.wd-post-row {
-    height: 90px;
-}
-
-.wd-letter {
-    float: left;
-    border-right: 1px var(--gray) solid;
-}
-
 .wd-post {
-    width: 615px;
-    height: 100%;
-    margin-left: 36px;
-    margin-right: 0;
+    width: 100%;
+    padding: 8px 0 15px 0;
+    display: inline-block;
     border-bottom: 1px var(--gray) solid;
 }
 
 .wd-post-text {
     font-size: 13px;
     color: var(--gray);
-    padding: 6px 16px 0 16px;
+    padding: 5px 0 0 15px;
     margin: 0;
 }
 
@@ -111,6 +74,7 @@ a {
     color: white;
     font-size: 15px;
     font-weight: bold;
+    width: 450px;
 }
 
 .wd-author {
@@ -124,19 +88,14 @@ a {
 
 .wd-post-with-image {
     float: left;
-    margin-top: 10px;
-    width: 480px;
-}
-
-.wd-post-row-with-image {
-    height: 120px;
+    width: 450px;
 }
 
 .wd-post-image {
     float: right;
     width: 100px;
     height: 100px;
-    margin: 11px 16px;
+    margin: 8px 16px 8px 5px;
     border-radius: 20px;
 }
 

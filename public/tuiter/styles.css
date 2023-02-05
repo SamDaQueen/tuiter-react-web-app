@@ -1,0 +1,19 @@
+:root {
+    --gray: rgb(110, 118, 125);
+    --blue: rgb(29, 161, 242);
+    --darkgray: rgb(47, 51, 54);
+}
+
+body {
+    color: white;
+    width: 600px;
+    background-color: black;
+    font-family: "Segoe UI", sans-serif;
+    border-right: 1px var(--gray) solid;
+    border-left: 1px var(--gray) solid;
+    margin: 0 20px 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
