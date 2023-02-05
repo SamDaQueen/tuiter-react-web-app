@@ -5,7 +5,7 @@
 
 .wd-search-bar {
     color: white;
-    background-color: rgb(33, 35, 39);
+    background-color: var(--darkgray);
     height: 30px;
     width: 75%;
     float: left;
@@ -38,7 +38,7 @@
 .wd-headers-row {
     display: flex;
     justify-content: center;
-    border-bottom: 3px var(--gray) solid;
+    border-bottom: 4px var(--darkgray) solid;
 }
 
 .wd-headers {
@@ -60,13 +60,13 @@
     width: 100%;
     padding: 8px 0 15px 0;
     display: inline-block;
-    border-bottom: 1px var(--gray) solid;
+    border-bottom: 1px var(--darkgray) solid;
 }
 
 .wd-post-text {
     font-size: 13px;
     color: var(--gray);
-    padding: 5px 0 0 15px;
+    padding: 5px 0 0 16px;
     margin: 0;
 }
 
@@ -74,16 +74,11 @@
     color: white;
     font-size: 15px;
     font-weight: bold;
-    width: 450px;
 }
 
 .wd-author {
     color: white;
     font-weight: bold;
-}
-
-.wd-float-done {
-    clear: both;
 }
 
 .wd-post-with-image {
@@ -95,7 +90,7 @@
     float: right;
     width: 100px;
     height: 100px;
-    margin: 8px 16px 8px 5px;
+    margin: 5px 16px 0 5px;
     border-radius: 20px;
 }
 

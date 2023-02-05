@@ -1,0 +1,93 @@
+.wd-page-title {
+    color: white;
+    margin: 12px 0 0 16px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-handle {
+    color: var(--gray);
+    font-size: 13px;
+    padding: 0 0 12px 16px;
+    margin: 0;
+    border-bottom: 1px var(--darkgray) solid;
+}
+
+.wd-flex {
+    display: flex;
+    border-bottom: 1px var(--darkgray) solid;
+}
+
+.wd-full-post-content {
+    margin: 12px 16px 0 12px;
+}
+
+.wd-full-post-author {
+    color: white;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+
+.wd-full-post-profile {
+    width: 48px;
+    height: 48px;
+    margin: 12px 0 0 16px;
+    border-radius: 50%;
+}
+
+.wd-subtext {
+    color: var(--gray);
+    font-size: 15px;
+    float: left;
+    margin: 0;
+}
+
+.wd-full-post-text {
+    max-width: 506px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.wd-full-post-image {
+    width: 504px;
+    height: 264px;
+    margin: 12px 0 0 0;
+    padding: 0;
+    border: 1px var(--darkgray) solid;
+    border-radius: 20px 20px 0 0;
+}
+
+.wd-caption {
+    color: var(--gray);
+    margin: 0;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px var(--darkgray) solid;
+    border-radius: 0 0 20px 20px;
+}
+
+.wd-caption-title {
+    color: white;
+}
+
+.wd-comments, .wd-retuits, .wd-likes {
+    float: left;
+}
+
+.wd-comment-icon, .wd-retuit-icon, .wd-like-icon, .wd-share-icon {
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.wd-num-comments, .wd-num-retuits, .wd-num-likes {
+    float: left;
+    margin: 0 0 0 12px;
+}
+
+.wd-num-likes {
+    color: red;
+}

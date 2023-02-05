@@ -9,11 +9,22 @@ body {
     width: 600px;
     background-color: black;
     font-family: "Segoe UI", sans-serif;
-    border-right: 1px var(--gray) solid;
-    border-left: 1px var(--gray) solid;
+    border: 1px var(--darkgray) solid;
     margin: 0 20px 0 20px;
 }
 
 a {
     text-decoration: none;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-icons {
+    margin: 12px 50px 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
 }
