@@ -1,0 +1,30 @@
+:root {
+    --gray: rgb(110, 118, 125);
+    --blue: rgb(29, 161, 242);
+    --darkgray: rgb(47, 51, 54);
+}
+
+body {
+    color: white;
+    width: 600px;
+    background-color: black;
+    font-family: "Segoe UI", sans-serif;
+    border: 1px var(--darkgray) solid;
+    margin: 0 20px 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-icons {
+    margin: 12px 50px 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+}
