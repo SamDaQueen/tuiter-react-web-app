@@ -23,7 +23,7 @@ const NavigationSidebar = (active) => {
             <a class="list-group-item" href="#"><i class="fas fa-ellipsis me-2"></i><span
                     class="d-none d-xl-inline">More</span></a>
        </div>
-       <button class="btn btn-secondary mt-2 col-md-12" type="button">Tuit</button>
+       <button class="btn btn-secondary mt-2 col-12" type="button">Tuit</button>
  `;
 };
 export default NavigationSidebar;
