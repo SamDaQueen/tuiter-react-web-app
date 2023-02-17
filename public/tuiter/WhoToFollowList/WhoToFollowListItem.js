@@ -8,7 +8,7 @@ const WhoToFollowListItem = (who) => {
             <span>@${who.handle}</span>
         </div>
         <div class="d-flex align-items-center justify-content-end wd-follow">
-            <button class="btn btn-primary">Follow</button>
+            <button class="btn btn-secondary">Follow</button>
         </div>
     </li>
 `;

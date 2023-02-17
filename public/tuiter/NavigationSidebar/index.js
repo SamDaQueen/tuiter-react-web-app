@@ -1,10 +1,14 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
   return `
        <div class="list-group">
             <a class="list-group-item" href="#"><i class="fas fa-kiwi-bird"></i></a>
-            <a class="list-group-item" href="../home.html"><i class="fas fa-house me-2"></i><span
+            <a class="list-group-item ${
+              active === "home" ? "active" : ""
+            }" href="../HomeScreen/index.html"><i class="fas fa-house me-2"></i><span
                     class="d-none d-xl-inline">Home</span></a>
-            <a class="list-group-item active" href="#"><i class="fas fa-hashtag me-2"></i><span
+            <a class="list-group-item ${
+              active === "explore" ? "active" : ""
+            }" href="../ExploreScreen/index.html"><i class="fas fa-hashtag me-2"></i><span
                     class="d-none d-xl-inline">Explore</span></a>
             <a class="list-group-item" href="#"><i class="fas fa-bell me-2"></i><span
                     class="d-none d-xl-inline">Notifications</span></a>
@@ -19,7 +23,7 @@ const NavigationSidebar = () => {
             <a class="list-group-item" href="#"><i class="fas fa-ellipsis me-2"></i><span
                     class="d-none d-xl-inline">More</span></a>
        </div>
-       <button class="btn btn-primary mt-2 col-md-12" type="button">Tuit</button>
+       <button class="btn btn-secondary mt-2 col-md-12" type="button">Tuit</button>
  `;
 };
 export default NavigationSidebar;
