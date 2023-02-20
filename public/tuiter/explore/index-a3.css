@@ -1,0 +1,96 @@
+.wd-tools {
+    position: relative;
+    left: 16px;
+}
+
+.wd-search-bar {
+    color: white;
+    background-color: var(--darkgray);
+    height: 30px;
+    width: 75%;
+    float: left;
+    border-radius: 20px;
+    border: 0;
+    margin: 8px 0 5px 16px;
+    padding-left: 40px;
+}
+
+.wd-search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 15px #719ECE;
+}
+
+.wd-search {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+.wd-gear {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 14px 12px 0 0;
+}
+
+.wd-headers-row {
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px var(--darkgray) solid;
+}
+
+.wd-headers {
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 16px;
+    color: var(--gray);
+}
+
+.wd-selected-header {
+    color: var(--blue);
+    padding: 16px 0 16px 0;
+    margin: 0 16px 0 16px;
+    border-bottom: 4px solid;
+}
+
+.wd-post {
+    width: 100%;
+    padding: 8px 0 15px 0;
+    display: inline-block;
+    border-bottom: 1px var(--darkgray) solid;
+}
+
+.wd-post-text {
+    font-size: 13px;
+    color: var(--gray);
+    padding: 5px 0 0 16px;
+    margin: 0;
+}
+
+.wd-post-title {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-author {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-post-with-image {
+    float: left;
+    width: 450px;
+}
+
+.wd-post-image {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin: 5px 16px 0 5px;
+    border-radius: 20px;
+}
+

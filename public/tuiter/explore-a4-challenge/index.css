@@ -1,0 +1,109 @@
+:root {
+    --gray: rgb(110, 118, 125);
+    --lightgray: #ECF0F1;
+    --blue: #1C97EA;
+    --darkgray: rgb(47, 51, 54);
+    --darkergray: #536471;
+    --lightergray: #F7F9F9;
+}
+
+.btn {
+    border-radius: 30px;
+}
+
+.wd-icon-dot {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    font-size: 8px;
+    z-index: 1;
+}
+
+.wd-icon-house {
+    position: relative;
+    z-index: 0;
+}
+
+.wd-tuit-btn {
+    background-color: var(--blue);
+}
+
+.list-group {
+    border-radius: 25px;
+}
+
+.list-group-item {
+    border: 0;
+}
+
+.wd-nav {
+    font-size: 1.2em;
+    margin: 8px 0 8px 0;
+}
+
+.wd-active {
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: var(--lightgray);
+    border: 0;
+    padding: 25px 0 25px 0;
+}
+
+.wd-headers {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+    color: var(--gray);
+}
+
+.wd-selected-header {
+    color: black;
+    border-bottom: 5px var(--blue) solid;
+}
+
+input.form-control {
+    border-radius: 5em;
+    padding: 10px;
+}
+
+.wd-right-list {
+    background-color: var(--lightergray);
+}
+
+.wd-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-square-avatar {
+    border-radius: 5px;
+}
+
+.wd-follow {
+    height: 60px;
+}
+
+.wd-post-image {
+    width: 84px;
+    height: 84px;
+    border-radius: 20%;
+}
+
+.wd-show {
+    color: var(--blue);
+}
+
+.wd-text-gray {
+    color: var(--darkergray);
+}
+
+.wd-fs-7 {
+    font-size: 14px;
+}
+
+.wd-no-decor {
+    text-decoration: none;
+}
