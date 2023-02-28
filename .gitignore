@@ -13,7 +13,8 @@
 /build
 
 #vendors
-/public/vendors
+/public/vendors/bootstrap
+/public/vendors/fontawesome
 
 # misc
 .DS_Store

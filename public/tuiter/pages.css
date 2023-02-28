@@ -1,0 +1,14 @@
+.btn {
+    border-radius: 25px;
+}
+
+.wd-post-image {
+    width: 72px;
+    height: 72px;
+    border-radius: 20%;
+    margin-top: 10px;
+}
+
+.wd-rounded {
+    border-radius: 2em;
+}
