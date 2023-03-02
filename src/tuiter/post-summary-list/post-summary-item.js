@@ -1,6 +1,8 @@
 import React from "react";
+import "./index.css";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useLocation } from "react-router-dom";
 
 const PostSummaryItem = ({
   post = {
@@ -12,6 +14,9 @@ const PostSummaryItem = ({
     image: "../tuiter/images/tesla.png",
   },
 }) => {
+  const { pathname } = useLocation();
+  const paths = pathname.split("/").filter((p) => p !== "");
+  const active = paths[paths.length - 1];
   return (
     <li className="list-group-item">
       <div className="row">
@@ -26,9 +31,9 @@ const PostSummaryItem = ({
         </div>
         <div className="col-2">
           <img
-            width={70}
-            height={70}
-            className="float-end rounded-3"
+            className={`float-end rounded-3 wd-post-image ${
+              active === "home" ? "wd-post-image-small" : "wd-post-image-big"
+            }`}
             src={`/images/${post.image}`}
           />
         </div>

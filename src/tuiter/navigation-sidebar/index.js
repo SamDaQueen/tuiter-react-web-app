@@ -1,37 +1,50 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import {
   faBell,
   faBookmark,
   faEllipsis,
+  faFlask,
   faHashtag,
   faHome,
   faList,
   faMessage,
 } from "@fortawesome/free-solid-svg-icons";
 
-const NavigationSidebar = ({ active = "explore" }) => {
+const NavigationSidebar = () => {
+  const { pathname } = useLocation();
+  const paths = pathname.split("/").filter((p) => p !== "");
+  const active = paths[paths.length - 1];
+
   return (
     <div className="list-group">
-      <a className="list-group-item" href="#">
+      <Link to={"/tuiter/home"} className={"list-group-item"}>
         <FontAwesomeIcon icon={faTwitter} className="me-2" />
         <span className="d-none d-xl-inline">Tuiter</span>
-      </a>
-      <a
-        className={`list-group-item
-                    ${active === "home" ? "active" : ""}`}
+      </Link>
+      <Link
+        to={"/tuiter/home"}
+        className={`list-group-item ${
+          active === "home" || active === "tuiter" ? "active" : ""
+        }`}
       >
         <FontAwesomeIcon icon={faHome} className="me-2" />
         <span className="d-none d-xl-inline">Home</span>
-      </a>
-      <a
-        className={`list-group-item
-                    ${active === "explore" ? "active" : ""}`}
+      </Link>
+      <Link
+        to={"/tuiter/explore"}
+        className={`list-group-item ${active === "explore" ? "active" : ""}`}
       >
         <FontAwesomeIcon icon={faHashtag} className="me-2" />
         <span className="d-none d-xl-inline">Explore</span>
-      </a>
+      </Link>
+      <Link to="/" className="list-group-item">
+        <FontAwesomeIcon icon={faFlask} className="me-2" />
+        <span className="d-none d-xl-inline">Labs</span>
+      </Link>
+
       <a
         className={`list-group-item
                     ${active === "notifications" ? "active" : ""}`}
