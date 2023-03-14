@@ -1,0 +1,15 @@
+.wd-post-image {
+    border-radius: 20%;
+    margin-top: 20px;
+}
+
+.wd-post-image-big {
+    width: 70px;
+    height: 70px;
+
+}
+
+.wd-post-image-small {
+    width: 36px;
+    height: 36px;
+}
