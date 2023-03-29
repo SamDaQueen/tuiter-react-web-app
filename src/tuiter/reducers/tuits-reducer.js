@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import tuits from "../data/tuits.json";
 
 const currentUser = {
-  userName: "Obi Wan Kenobi",
+  userName: "Obi-Wan Kenobi",
   handle: "ben_kenobi",
   avatar: "../images/kenobi.jpg",
 };
