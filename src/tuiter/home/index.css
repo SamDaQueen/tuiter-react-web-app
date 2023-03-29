@@ -1,0 +1,9 @@
+.wd-post {
+    border-bottom: 1px #267B7A solid;
+}
+
+.wd-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
