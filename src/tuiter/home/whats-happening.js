@@ -6,9 +6,13 @@ const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState("");
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
+    if (whatsHappening === "") {
+      return;
+    }
     const newTuit = {
       tuit: whatsHappening,
     };
+    setWhatsHappening("");
     dispatch(createTuitThunk(newTuit));
   };
   return (
