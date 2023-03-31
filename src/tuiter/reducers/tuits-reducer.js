@@ -15,6 +15,7 @@ const currentUser = {
 const templateTuit = {
   ...currentUser,
   topic: "Star Wars",
+  title: "The Force Awakens",
   time: "2h",
   liked: false,
   replies: 0,
@@ -53,9 +54,7 @@ const tuitsSlice = createSlice({
     },
     [createTuitThunk.fulfilled]: (state, { payload }) => {
       state.loading = false;
-      console.log("templateTuit", templateTuit);
-      console.log("payload", payload);
-      state.tuits.push({
+      state.tuits.unshift({
         ...templateTuit,
         ...payload,
       });
