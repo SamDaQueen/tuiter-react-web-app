@@ -2,12 +2,13 @@ import { faCircleCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useDispatch } from "react-redux";
+import { deleteTuitThunk } from "../../services/tuits-thunks.js";
 import "../home/index.css";
-import { deleteTuit } from "../reducers/tuits-reducer";
 import TuitStats from "./tuit-stats";
 
 const TuitItem = ({ tuit }) => {
   const dispatch = useDispatch();
+
   return (
     <div className="list-group-item wd-post">
       <div className="row p-2">
@@ -29,7 +30,7 @@ const TuitItem = ({ tuit }) => {
               <FontAwesomeIcon
                 icon={faXmark}
                 style={{ color: "#536471" }}
-                onClick={() => dispatch(deleteTuit(tuit._id))}
+                onClick={() => dispatch(deleteTuitThunk(tuit._id))}
               />
             </div>
           </div>

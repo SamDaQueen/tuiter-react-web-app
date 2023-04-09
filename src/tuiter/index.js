@@ -17,7 +17,7 @@ import WhoToFollowList from "./who-to-follow-list";
 const store = configureStore({
   reducer: {
     who: whoReducer,
-    tuits: tuitsReducer,
+    tuitsData: tuitsReducer,
     posts: postsReducer,
     profile: profileReducer,
   },
