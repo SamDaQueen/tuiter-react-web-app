@@ -1,6 +1,6 @@
 import React from "react";
+import postsArray from "../data/tuits.json";
 import "./index.css";
-import postsArray from "./posts.json";
 import PostItem from "./post-list-item";
 
 const PostList = () => {

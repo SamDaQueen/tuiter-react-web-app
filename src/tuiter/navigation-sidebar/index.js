@@ -1,6 +1,3 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import {
   faBell,
@@ -12,6 +9,9 @@ import {
   faList,
   faMessage,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
@@ -73,13 +73,13 @@ const NavigationSidebar = () => {
         <FontAwesomeIcon icon={faList} className="me-2" />
         <span className="d-none d-xl-inline">Lists</span>
       </a>
-      <a
-        className={`list-group-item
-                    ${active === "profile" ? "active" : ""}`}
+      <Link
+        to={"/tuiter/profile"}
+        className={`list-group-item ${active === "profile" ? "active" : ""}`}
       >
         <FontAwesomeIcon icon={faHome} className="me-2" />
         <span className="d-none d-xl-inline">Profile</span>
-      </a>
+      </Link>
       <a
         className={`list-group-item
                     ${active === "more" ? "active" : ""}`}
